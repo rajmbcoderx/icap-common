@@ -2,7 +2,7 @@
   "name": "icap-common",
   "version": "0.1.0",
   "description": "icap common components ",
-  "main": "./out/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "build": "webpack --config webpack.ui.config.js",
     "prepare": "npm run build"
