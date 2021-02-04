@@ -2,9 +2,9 @@
   "name": "icap-common",
   "version": "0.1.0",
   "description": "icap common components ",
-  "main": "build/index.js",
+  "main": "./out/index.js",
   "scripts": {
-    "build": "babel src -d build --copy-files",
+    "build": "webpack --config webpack.ui.config.js",
     "prepare": "npm run build"
   },
   "repository": {
@@ -23,12 +23,24 @@
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",
-    "react": "^16.2.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.13.1",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "html-webpack-plugin": "^4.4.1",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "url-loader": "^4.1.0"
   }
 }

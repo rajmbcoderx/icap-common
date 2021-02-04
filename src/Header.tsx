@@ -44,8 +44,11 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
+  type headerOptions = {
+    showBack: boolean
+}
 
-function Header({showBack}){
+export function Header({showBack}:headerOptions){
     const classes = useStyles(); 
     return(        
         <div className={classes.header} >
